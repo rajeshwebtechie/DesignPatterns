@@ -1,7 +1,7 @@
 public class BinaryObserver extends Observer{
 
    static{
-      CoreNotifier.attach(new BinaryObserver());
+      CoreObserver.attach(new BinaryObserver());
    }
 
    public void update() {

@@ -1,17 +1,6 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class CoreNotifier {
-	
-   private static List<Observer> observers = new ArrayList<Observer>();
-
-   public static void attach(Observer observer){
-      observers.add(observer);
+   public static void main(String[] args) {
+      CoreObserver corenotifier = new CoreObserver();
+      corenotifier.notifyAllObservers();
    }
-
-   public static void notifyAllObservers(){
-      for (Observer observer : observers) {
-         observer.update();
-      }
-   } 	
 }

@@ -1,6 +1,6 @@
 public class HexaObserver extends Observer{
 
-	  public HexaObserver(CoreNotifier corenotifier){
+	  public HexaObserver(CoreObserver corenotifier){
 	      corenotifier.attach(this);
 	   }
 

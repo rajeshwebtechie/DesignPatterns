@@ -1,6 +1,6 @@
 public class OctalObserver extends Observer{
 
-   public OctalObserver(CoreNotifier corenotifier){
+   public OctalObserver(CoreObserver corenotifier){
 	      corenotifier.attach(this);
 	   }
    @Override
